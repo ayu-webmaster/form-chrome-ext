@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Get Amigos Form Submitted Data",
+    "version": "1.0.0",
+    "description": "Amigos All Form Submits",
+    "short_name": "amigos extension",
+    "content_scripts": [
+      {
+        "run_at": "document_end",
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+   }
+
+   
+   
