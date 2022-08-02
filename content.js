@@ -51,8 +51,9 @@ function myConsoleFunction() {
                         } else if (getFieldName)
                             allKeyPairValues[getFieldName] = element.value
                     }
+                    const firbaseDocumentKey = `${allForms[i].name || ''}-${new Date().toISOString()}`
 
-                    fetch('http://localhost:3001/api/app/firebase-store-values', {
+                    fetch(`http://localhost:3001/api/app/${firbaseDocumentKey}/firebase-store-values`, {
                         method: 'POST', 
                         mode: 'cors', 
                         cache: 'no-cache', 
