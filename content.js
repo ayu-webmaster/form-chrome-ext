@@ -28,7 +28,7 @@ function myConsoleFunction() {
                         ...allFormsSelectItems2,
                     ];
 
-                    const allKeyPairValues = {};
+                    const allKeyPairValues = {extVersion:'1.0.0'};
 
                     for (let j = 0; j < allFormsItems2.length; j += 1) {
                         const element = allFormsItems2[j];
