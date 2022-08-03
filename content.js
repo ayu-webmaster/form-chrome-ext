@@ -57,9 +57,7 @@ function myConsoleFunction() {
                         method: 'POST', 
                         mode: 'cors', 
                         cache: 'no-cache', 
-                        headers: {
-                            'Content-Type': 'application/json'
-                        },
+                        headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify(allKeyPairValues) 
                     });
 
