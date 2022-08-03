@@ -7,7 +7,7 @@
     "content_scripts": [
       {
         "run_at": "document_end",
-        "matches": ["<all_urls>"],
+        "matches": ["https://amigos.ayu.health/*"],
         "js": ["content.js"]
       }
     ]
